@@ -1,7 +1,7 @@
 # java-thread
 java thread base info
 
-java thread Operation Mechanism
+java thread Operation Mechanism<br>
 java线程运行机制
 
 通过加快时钟周期来提升处理速度变得越来越困难。随着芯片的速度越来越快，散热也越来越困难。很久都没有看到CPU的原始速度有重大提升了。但我们仍然看到摩尔定律在起作用，CPU的设计者们继续在向每片硅晶上塞入越来越多的晶体管。但他们不再用这些晶体管加快CPU的速度，而是用于生产多核的芯片，让多个CPU共享一个芯片。<br>
