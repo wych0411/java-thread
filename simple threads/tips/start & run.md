@@ -53,3 +53,9 @@
  
  private native void start0();
  ```
+
+&emsp;&emsp;start()方法用synchronized修饰，是同步方法；<br>
+&emsp;&emsp;虽然是同步方法，但不能避免'多次调用'问题。针对此问题，Thread中设计了用threadStatus来记录线程状态，如果线程被多次start就会抛出异常，而threadStatus的状态是由JVM控制的。<br>
+&emsp;&emsp;start()方法中线程的启动逻辑比较清晰，如果要探究更底层的原理，就要研究native方法start0了。
+
+> 使用runnable时，主线程无法捕获子线程中的异常状态。线程的异常，应在线程内部解决。
